@@ -1,0 +1,88 @@
+/* ----------------
+    Reset
+---------------- */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ----------------
+    Grid Layaout
+---------------- */ 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.row > * {
+    padding: 5px 5px;
+}
+
+.col {
+    
+}
+
+/* ----------------
+    Typography
+---------------- */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*-------------------
+    BUTTONS
+-------------------*/
+.btn {
+    background-color: #0061ff;
+    border-color: #0061ff;
+    margin-right: 10px;
+    color: white;
+    height: 30px;
+    width: 60px;
+    margin-top: 25px;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: black;
+    border-color: black 1px solid;
+}
+.btn-secondary {
+    background-color: #23272a;
+    color: #fff;
+}
+
+/*-------------------
+    HEADER
+-------------------*/
+header {
+    font-size: 13px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+header nav {
+    display: flex;
+    gap: 18px;
+    line-height: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    padding: 5px 0px 5px 10px;
+}
