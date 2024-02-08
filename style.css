@@ -167,8 +167,8 @@ h2 {
 
 .user {
     height: 40px;
-    width: 100%;
-    border: 1px solid #d0d0d3;
+    border-bottom: 1px solid #d0d0d3;
+    width: 103%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,7 +180,7 @@ hr {
 }
 
 .card {
-    border-color: #d0d0d3;
+    border: 1px solid #d0d0d3;
     padding: 10px 10px;
 }
 
