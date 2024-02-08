@@ -64,7 +64,7 @@ body {
 -------------------*/
 header {
     font-size: 13px;
-    position: fixed;
+    position: sticky;
     width: 100%;
 }
 
@@ -92,6 +92,9 @@ a {
 /* ----------------
     Main
 ---------------- */
+main{
+
+}
 
 .hero {
     background-color: #b4d0e7;
