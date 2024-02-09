@@ -43,12 +43,14 @@ img {
 }
 .col-33 {
     width: calc(100% / 3);
+    aspect-ratio: 1;
 }
 .col-40 {
     width: 40%;
 }
 .col-50 {
     width: 50%;
+    aspect-ratio: 1;
 }
 .col-60 {
     width: 60%;
@@ -71,6 +73,7 @@ img {
 ---------------- */
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow-y: auto;
 }
 
 /*-------------------
@@ -109,11 +112,20 @@ body {
     cursor: pointer;
 }
 
+.btn-noborder {
+    border-color: white;
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px 35px;
+    cursor: pointer;
+    box-shadow: none;
+}
+
 /*-------------------
     Font
 -------------------*/
 
-.container ul, nav, .check:not(i), .user:not(i), .box, .container p {
+.container ul, nav, .check:not(i), .user:not(i), .box, p {
     font-size: 13px;
     font-weight: 500;
 }
@@ -206,9 +218,9 @@ h2 {
     gap: 5px;
 }
 
-hr {
+.piano-buisness hr {
     width: 30px;
-    color: #d0d0d3;
+    color: rgb(208, 208, 211, 0.5);
 }
 
 .card {
@@ -295,3 +307,129 @@ ul i {
 }
 
 
+/* ----------------
+    6° Section
+---------------- */
+.scopri {
+    margin-top: 200px;
+}
+
+.scopri a {
+    margin-top: 50px;
+}
+
+/* ----------------
+    7° Section
+---------------- */
+.quadri {
+    margin-top: 150px;
+}
+
+.quadri .col-33 {
+    position: relative;
+}
+
+.col-50 img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
+    padding: 70px 70px;
+}
+
+.verde {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #a2d39b;
+    border-color: rgb(209, 233, 205, 0.5) 10px solid;
+}
+
+.bordeaux {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #61082b;
+}
+
+.azzurro {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #0093ce;
+}
+
+.rosso {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ff1c1c;
+}
+
+.rosso-scuro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #d5001f;
+}
+
+.celeste {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #b4d0e7;
+}
+
+.blu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #0d2481;
+}
+
+.giallo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ffd830;
+}
+
+.designit {
+    background-color: #f5f5f5;
+    padding: 50px 50px;
+}
+
+.designit hr {
+    width: 100px;
+    color: rgb(208, 208, 211, 0.5);
+}
+
+.designit img {
+    width: 270px;
+    min-height: 170px;
+}
+
+/* ----------------
+    8° Section
+---------------- */
+.col-60 h2 {
+    color: #61082b;
+}
+
+.carta-zucchero {
+    background-color: #b4d0e7;
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+
+.end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ----------------
+    9° Section
+---------------- */
