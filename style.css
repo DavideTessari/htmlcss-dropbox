@@ -7,11 +7,6 @@
     box-sizing: border-box;
 }
 
-.container {
-    max-width: 1000px;
-    margin: auto;
-}
-
 img {
     max-width: 100%;
 }
@@ -19,15 +14,16 @@ img {
 /* ----------------
     Grid Layaout
 ---------------- */ 
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-.row > * {
-    padding: 5px 5px;
 }
 
 .col-20 {
@@ -42,8 +38,14 @@ img {
 .col-33 {
     width: calc(100% / 3);
 }
+.col-40 {
+    width: 40%;
+}
 .col-50 {
     width: 50%;
+}
+.col-60 {
+    width: 60%;
 }
 .col-70 {
     width: 70%;
@@ -83,10 +85,28 @@ body {
     border-color: #0061ff;
     color: white;
     padding: 5px 5px;
+    width: 100%;
+
 }
-.btn-secondary {
-    background-color: #23272a;
-    color: #fff;
+
+.team {
+    margin-top: 40px;
+}
+
+.btn-white {
+    border-color: #d0d0d3;
+    background-color: white;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+/*-------------------
+    Font
+-------------------*/
+
+.container ul, nav, .check:not(i), .user:not(i), .box, .container p {
+    font-size: 13px;
+    font-weight: 500;
 }
 
 /*-------------------
@@ -168,10 +188,11 @@ h2 {
 .user {
     height: 40px;
     border-bottom: 1px solid #d0d0d3;
-    width: 103%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
 }
 
 hr {
@@ -181,7 +202,6 @@ hr {
 
 .card {
     border: 1px solid #d0d0d3;
-    padding: 10px 10px;
 }
 
 .mese {
@@ -200,11 +220,6 @@ ul {
     color: #0063ff;
 }
 
-.container ul, nav, .check:not(i), .user:not(i) {
-    font-size: 13px;
-    font-weight: 400;
-}
-
 .radio {
     margin: 40px 0;
 }
@@ -218,6 +233,37 @@ ul {
 }
 
 .container-card {
-    max-width: calc(300px - 60px);
+    max-width: calc(100% - 60px);
     margin: auto;
 }
+
+.container h3 {
+    margin-top: 30px;
+}
+
+/* ----------------
+    3° Section
+---------------- */
+.box {
+    height: 40px;
+    border: 1px solid #d0d0d3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* ----------------
+    4° Section
+---------------- */
+.partner {
+    margin-top: 150px;
+}
+
+.partner .col-40 {
+    padding: 35px;
+}
+
+
+
