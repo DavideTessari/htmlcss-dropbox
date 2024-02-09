@@ -26,6 +26,12 @@ img {
     flex-wrap: wrap;
 }
 
+.gap-30 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
 .col-20 {
     width: 20%;
 }
@@ -78,6 +84,7 @@ body {
     height: 30px;
     width: 60px;
     margin-top: 25px;
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -86,11 +93,12 @@ body {
     color: white;
     padding: 5px 5px;
     width: 100%;
-
+    cursor: pointer;
 }
 
 .team {
     margin-top: 40px;
+    cursor: pointer;
 }
 
 .btn-white {
@@ -98,6 +106,7 @@ body {
     background-color: white;
     margin-top: 25px;
     padding: 10px;
+    cursor: pointer;
 }
 
 /*-------------------
@@ -114,7 +123,8 @@ body {
 -------------------*/
 header {
     font-size: 13px;
-    position: fixed;
+    position: sticky;
+    top:0;
     width: 100%;
     background-color: #fff;
 }
@@ -202,6 +212,8 @@ hr {
 
 .card {
     border: 1px solid #d0d0d3;
+    position: relative;
+    gap: 50px;
 }
 
 .mese {
@@ -214,6 +226,11 @@ hr {
 
 ul {
     list-style: none;
+}
+
+ul i {
+    position: absolute;
+    left: 12px;
 }
 
 .check i{
