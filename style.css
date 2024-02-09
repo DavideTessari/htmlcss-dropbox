@@ -433,3 +433,55 @@ ul i {
 /* ----------------
     9° Section
 ---------------- */
+.domande {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.domande h5 {
+    margin: 30px;
+    margin-left: 0px;
+}
+
+.domande h2 {
+    margin-bottom: 50px;
+}
+
+.domande .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.domande i {
+    margin-right: 40px;
+}
+
+/* ----------------
+    Footer
+---------------- */
+footer {
+    background-color: black;
+}
+
+.hero .col-20 {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.col-20 h4 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.col-20 ul {
+    font-size: 11px;
+    color: rgb(208, 208, 211, 0.8);
+    line-height: 2;
+}
+
+footer hr {
+    width: 70px;
+    color: grey
+}
