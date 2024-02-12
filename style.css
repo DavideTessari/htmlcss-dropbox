@@ -24,12 +24,7 @@ img {
 .row {
     display: flex;
     flex-wrap: wrap;
-}
-
-.gap-30 {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 30px;
+    justify-content: space-between;
 }
 
 .col-20 {
@@ -41,6 +36,9 @@ img {
 .col-30 {
     width: 30%;
 }
+.col-33- {
+    width: calc(100% / 3 - 25px);
+}
 .col-33 {
     width: calc(100% / 3);
 }
@@ -50,6 +48,7 @@ img {
 .col-50 {
     width: 50%;
     height: 50%;
+    aspect-ratio: 1;
 }
 .col-60 {
     width: 60%;
@@ -59,9 +58,6 @@ img {
 }
 .col-80 {
     width: 80%;
-}
-.col-grow {
-    flex-grow: 1;
 }
 
 /* ----------------
@@ -85,36 +81,35 @@ body {
     margin-top: 25px;
     cursor: pointer;
 }
-
-.btn-primary {
+.btn-hero {
     background-color: #0061ff;
     border-color: #0061ff;
     color: white;
-    padding: 5px 5px;
-    width: 100%;
+    padding: 8px 5px;
     cursor: pointer;
 }
-
+.btn-primary {
+    width: 100%;
+}
 .team {
-    margin-top: 40px;
-    cursor: pointer;
+    margin-top: 35px;
+    width: 100%;
 }
 
 .btn-white {
     border-color: #d0d0d3;
     background-color: white;
     margin-top: 25px;
-    padding: 10px;
+    padding: 8px 10px;
     cursor: pointer;
 }
-
 .btn-noborder {
     border-color: white;
     background-color: white;
     margin-top: 10px;
-    padding: 10px 35px;
+    padding: 8px 5px;
+    width: 100%;
     cursor: pointer;
-    box-shadow: none;
 }
 
 /*-------------------
@@ -173,10 +168,10 @@ header a {
 }
 
 i {
-    font-size: 35px;
+    font-size: 50px;
 }
 
-p {
+.hero p {
     margin-top: 40px;
 }
 
@@ -190,7 +185,7 @@ p {
 }
 
 .hero-container h1 {
-    padding-top: 200px;
+    padding-top: 100px;
     font-size: 70px;
     font-weight: bold;
 }
@@ -330,105 +325,83 @@ ul i {
     margin-top: 150px;
 }
 
-.quadri .col-33 {
-    position: relative;
-}
-
 .square {
-    width: calc(100% / 3);
-    height: calc(100vh / 3);
-    overflow: auto;
+    overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.col-50 img {
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.quadri .filter img {
     filter: invert(1);
-    padding: 70px 70px;
+}
+
+.verde, .bordeaux, .azzurro, .rosso, .rosso-scuro, .celeste, .blu, .giallo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verde img, .bordeaux img, .rosso img, .rosso-scuro img, .celeste img, .blu img, .azzurro img {
+    max-width: 150px;
+    max-height: auto;
 }
 
 .verde {
-    position: absolute;
-    top: 0;
-    left: 0;
     background-color: #a2d39b;
-    border-color: rgb(209, 233, 205, 0.5) 10px solid;
+    border-color: 10px solid rgb(209, 233, 205, 0.5);
 }
 
 .bordeaux {
-    position: absolute;
-    top: 0;
-    right: 0;
     background-color: #61082b;
 }
 
 .azzurro {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     background-color: #0093ce;
 }
 
 .rosso {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     background-color: #ff1c1c;
 }
 
 .rosso-scuro {
-    position: absolute;
-    top: 0;
-    left: 0;
     background-color: #d5001f;
 }
 
 .celeste {
-    position: absolute;
-    top: 0;
-    right: 0;
     background-color: #b4d0e7;
 }
 
 .blu {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     background-color: #0d2481;
 }
 
 .giallo {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     background-color: #ffd830;
 }
 
 .designit {
     background-color: #f5f5f5;
-    padding: 50px 50px;
+    padding: 0 50px;
 }
 
 .designit hr {
-    width: 100px;
-    color: rgb(208, 208, 211, 0.5);
+    max-width: 100px;
+    border-color: rgb(208, 208, 211, 0.5);
 }
 
 .designit img {
-    max-width: 270px;
-    min-height: 170px;
+    max-width: 250px;
+    min-height: auto;
+}
+
+.designit p {
+    font-size: 15px;
 }
 
 /* ----------------
     8° Section
 ---------------- */
-.col-60 h2 {
+.col-70 h2 {
     color: #61082b;
 }
 
@@ -502,5 +475,4 @@ footer hr {
 
 .italiano, footer i {
     color: rgb(208, 208, 211, 0.7);
-    font-size: 13px;
 }
