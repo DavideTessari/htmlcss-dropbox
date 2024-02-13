@@ -191,7 +191,7 @@ i {
 }
 
 /* ----------------
-    2° Section
+   1° Section
 ---------------- */
 .piano-buisness {
     margin-top: 60px;
@@ -272,7 +272,7 @@ ul i {
 }
 
 /* ----------------
-    3° Section
+  Piano-buisness
 ---------------- */
 .box {
     height: 40px;
@@ -285,7 +285,7 @@ ul i {
 }
 
 /* ----------------
-    4° Section
+    Partner
 ---------------- */
 .partner {
     margin-top: 150px;
@@ -296,7 +296,7 @@ ul i {
 }
 
 /* ----------------
-    5° Section
+      Buisness
 ---------------- */
 .buisness {
     margin-top: 150px;
@@ -308,7 +308,7 @@ ul i {
 
 
 /* ----------------
-    6° Section
+    Scopri
 ---------------- */
 .scopri {
     margin-top: 200px;
@@ -319,7 +319,7 @@ ul i {
 }
 
 /* ----------------
-    7° Section
+    Quadri
 ---------------- */
 .quadri {
     margin-top: 150px;
@@ -381,12 +381,13 @@ ul i {
 
 .designit {
     background-color: #f5f5f5;
-    padding: 0 50px;
+    padding: 50px;
 }
 
 .designit hr {
     max-width: 100px;
     border-color: rgb(208, 208, 211, 0.5);
+    margin-top: 50px;
 }
 
 .designit img {
@@ -396,10 +397,11 @@ ul i {
 
 .designit p {
     font-size: 15px;
+    margin-top: 60px;
 }
 
 /* ----------------
-    8° Section
+   Carta-zucchero
 ---------------- */
 .col-70 h2 {
     color: #61082b;
@@ -417,7 +419,7 @@ ul i {
 }
 
 /* ----------------
-    9° Section
+    Domande
 ---------------- */
 .domande {
     margin-top: 150px;
